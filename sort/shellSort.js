@@ -1,4 +1,4 @@
-// 直接插入排序
+// 插入排序  希尔排序
 
 function insertSort (array) {
   var initArray = array
@@ -10,7 +10,7 @@ function insertSort (array) {
       let temp = item
       initArray[index] = initArray[index - 1]
       let j = index - 2
-      while(temp < initArray[j]) {
+      while(j >= 0 && temp < initArray[j]) {
         initArray[j + 1] = initArray[j]
         j--
       }
